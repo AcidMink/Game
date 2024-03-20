@@ -50,6 +50,8 @@ int random1;
 int random2;
 int random5;
 int random6;
+int random7;
+int random8;
 
 int player1_def = 50;
 int player2_def = 50;
@@ -197,9 +199,11 @@ int main() {    //PvP TURN-BASED STRATEGY GAME
 
   while(true) {
     combat_phase();
-    random5 = rand() % 4 + 1;
-    random6 = rand() % 4 + 1;
-    upgrade_phase(random5, random6);
+    random5 = rand() % 10 + 1;
+    random6 = rand() % 10 + 1;
+    random7 = rand() % 10 + 1;
+    random8 = rand() % 10 + 1;
+    upgrade_phase(random5, random6, random7, random8);
   }
 
   cout << "END!";
