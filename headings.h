@@ -36,3 +36,13 @@ extern int demon_hp;
 extern int demon_dmg;
 extern float demon_crit_chance;
 extern int draw_init_demon;
+
+extern int tank_hp;
+extern int tank_dmg;
+extern float tank_crit_chance;
+extern int draw_init_tank;
+
+extern int goblin_hp;
+extern int goblin_dmg;
+extern float goblin_crit_chance;
+extern int draw_init_goblin;
