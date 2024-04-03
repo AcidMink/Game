@@ -17,20 +17,30 @@ string player2_action;
 string player1_name;
 string player2_name;
 
-int assassin_hp = 10;
-int assassin_dmg = 2;
+int assassin_hp = 30;
+int assassin_dmg = 8;
 float assassin_crit_chance = 0.05;
-int draw_init_assassin = 3;
+int draw_init_assassin = 4;
 
-int knight_hp = 20;
-int knight_dmg = 1;
+int knight_hp = 40;
+int knight_dmg = 6;
 float knight_crit_chance = 0.10;
-int draw_init_knight = 2;
+int draw_init_knight = 3;
 
-int demon_hp = 15;
-int demon_dmg = 1;
+int demon_hp = 35;
+int demon_dmg = 7;
 float demon_crit_chance = 0.5;
-int draw_init_demon = 1;
+int draw_init_demon = 2;
+
+int goblin_hp = 15;
+int goblin_dmg = 10;
+float goblin_crit_chance = 0.01;
+int draw_init_goblin = 6;
+
+int tank_hp = 50;
+int tank_dmg = 5;
+float tank_crit_chance = 0.5;
+int draw_init_tank = 1;
 
 string player1_character;   //Player 1 character
 int player1_hp;   //PLAYER 1 HP
@@ -160,6 +170,22 @@ int main() {    //PvP TURN-BASED STRATEGY GAME
     player1_crit_chance = 1;  
     player1_initiative = 5;
   }
+  else if (player1_action == "goblin") {
+    player1_character = "Goblin";
+    player1_hp = goblin_hp;
+    player1_hpcap = goblin_hp;
+    player1_dmg = goblin_dmg;
+    player1_crit_chance = goblin_crit_chance;
+    player1_initiative = draw_init_goblin;
+  }
+  else if (player1_action == "tank") {
+    player1_character = "Tank";
+    player1_hp = tank_hp;
+    player1_hpcap = tank_hp;
+    player1_dmg = tank_dmg;
+    player1_crit_chance = tank_crit_chance;
+    player1_initiative = draw_init_tank;
+  }
   if (player2_action == "assassin") {
     player2_character = "Assassin";
     player2_hp = assassin_hp;
@@ -183,6 +209,22 @@ int main() {    //PvP TURN-BASED STRATEGY GAME
     player2_dmg = demon_dmg;
     player2_crit_chance = demon_crit_chance;
     player2_initiative = draw_init_demon;
+  }
+  else if (player2_action == "goblin") {
+    player2_character = "Goblin";
+    player2_hp = goblin_hp;
+    player2_hpcap = goblin_hp;
+    player2_dmg = goblin_dmg;
+    player2_crit_chance = goblin_crit_chance;
+    player2_initiative = draw_init_goblin;
+  }
+  else if (player2_action == "tank") {
+    player2_character = "Tank";
+    player2_hp = tank_hp;
+    player2_hpcap = tank_hp;
+    player2_dmg = tank_dmg;
+    player2_crit_chance = tank_crit_chance;
+    player2_initiative = draw_init_tank;
   }
   else {
     player2_character = "peasant";
