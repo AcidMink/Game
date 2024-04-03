@@ -2,7 +2,7 @@
 using namespace std;
 
 void shop1(string action) {
-  if (action == "health") {
+  if (action == "hp") {
     cout << player1_hp;
     player1_hp += 5;
     cout << "=>" << player1_hp << endl;
@@ -25,7 +25,7 @@ void shop1(string action) {
   }
 }
 void shop2(string action) {
-  if (action == "health") {
+  if (action == "hp") {
     cout << player2_hpcap;
     player2_hpcap += 5;
     cout << "=>" << player2_hpcap << endl;
