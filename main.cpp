@@ -132,9 +132,9 @@ int main() {    //PvP TURN-BASED STRATEGY GAME
   cout << "\nPlayer 2 choose name: ", getline(cin, player2_action);
   player1_name = player1_action;
   player2_name = player2_action;
-  cout << "\nPlayable characters \e[1mKnight\e[0m, \e[1mAssassin\e[0m, \e[1mDemon\e[0m" << endl;
+  cout << "\nPlayable characters \e[1mKnight, Assassin, Demon, Tank, Goblin\e[0m" << endl;
   cout << "Player 1 choose character: ", getline(cin, player1_action);
-  cout << "\nPlayable characters \e[1mKnight\e[0m, \e[1mAssassin\e[0m, \e[1mDemon\e[0m" << endl;
+  cout << "\nPlayable characters \e[1mKnight, Assassin, Demon, Tank, Goblin\e[0m" << endl;
   cout << "Player 2 choose character: ", getline(cin, player2_action);
   player1_action = to_lower(player1_action);
   player2_action = to_lower(player2_action);
