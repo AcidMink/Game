@@ -199,11 +199,9 @@ int main() {    //PvP TURN-BASED STRATEGY GAME
 
   while(true) {
     combat_phase();
-    random5 = rand() % 10 + 1;
-    random6 = rand() % 10 + 1;
-    random7 = rand() % 10 + 1;
-    random8 = rand() % 10 + 1;
-    upgrade_phase(random5, random6, random7, random8);
+    player1_hp = player1_hpcap;
+    player2_hp = player2_hpcap;
+    upgrade_phase();
   }
 
   cout << "END!";
