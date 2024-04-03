@@ -241,12 +241,10 @@ int main() {    //PvP TURN-BASED STRATEGY GAME
 
   while(true) {
     combat_phase();
-
     upgrade_phase();
     player1_hp = player1_hpcap;
     player2_hp = player2_hpcap;
   }
-
   cout << "END!";
   return 0;
 }
