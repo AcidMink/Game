@@ -24,7 +24,28 @@ void shop1(string action) {
     cout << "=>" << player1_def << endl;
   }
 }
-
+void shop2(string action) {
+  if (action == "health") {
+    cout << player2_hpcap;
+    player2_hpcap += 5;
+    cout << "=>" << player2_hpcap << endl;
+  }
+  else if (action == "dmg") {
+    cout << player2_dmg;
+    player2_dmg++;
+    cout << "=>" << player2_dmg << endl;
+  }
+  else if (action == "crit") {
+    cout << player2_crit_chance;
+    player2_crit_chance += 2;
+    cout << "=>" << player2_crit_chance << endl;
+  }
+  else if (action == "defence") {
+    cout << player2_def;
+    player2_def++;
+    cout << "=>" << player2_def << endl;
+  }
+}
 void upgrade_phase() {
   cout << player1_name << endl;    
   cout << "\n\e[1mSHOP\e[0m↓↓↓↓" << endl;
@@ -35,5 +56,5 @@ void upgrade_phase() {
   shop1(player1_action);
   cout << player2_name << ": ", getline(cin, player2_action);
   player2_action = to_lower(player2_action);
-  shop1(player2_action);
+  shop2(player2_action);
 }
