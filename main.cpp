@@ -170,7 +170,7 @@ int main() {    //PvP TURN-BASED STRATEGY GAME
     player1_crit_chance = 1;  
     player1_initiative = 5;
   }
-    else if (player1_action == "goblin") {
+  else if (player1_action == "goblin") {
     player1_character = "Goblin";
     player1_hp = goblin_hp;
     player1_hpcap = goblin_hp;
@@ -178,7 +178,7 @@ int main() {    //PvP TURN-BASED STRATEGY GAME
     player1_crit_chance = goblin_crit_chance;
     player1_initiative = draw_init_goblin;
   }
-    else if (player1_action == "tank") {
+  else if (player1_action == "tank") {
     player1_character = "Tank";
     player1_hp = tank_hp;
     player1_hpcap = tank_hp;
@@ -210,7 +210,7 @@ int main() {    //PvP TURN-BASED STRATEGY GAME
     player2_crit_chance = demon_crit_chance;
     player2_initiative = draw_init_demon;
   }
-    else if (player2_action == "goblin") {
+  else if (player2_action == "goblin") {
     player2_character = "Goblin";
     player2_hp = goblin_hp;
     player2_hpcap = goblin_hp;
@@ -218,7 +218,7 @@ int main() {    //PvP TURN-BASED STRATEGY GAME
     player2_crit_chance = goblin_crit_chance;
     player2_initiative = draw_init_goblin;
   }
-    else if (player2_action == "tank") {
+  else if (player2_action == "tank") {
     player2_character = "Tank";
     player2_hp = tank_hp;
     player2_hpcap = tank_hp;
