@@ -64,9 +64,7 @@ int player2_start_combat(int random3, int random4) {
   cout << player1_name << " action: ", cin >> player1_action;
   player1_action = to_lower(player1_action);
 
-  srand (time(NULL));
   random3 = rand() % 100 + 1;   //Player1 def chance random
-  srand (time(NULL));
   random4 = rand() % 100 + 1;   //Player2 def chance random
 
   if ((player1_action == "attack")&&(player2_action == "attack")) {
