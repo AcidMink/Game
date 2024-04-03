@@ -67,7 +67,7 @@ void display1(string name, string character, int dmg, int hp, float crit, int hp
 }
 void display2(string name, int dmg, int hp, float crit, int hpcap) {
   crit = crit * 100;
-  cout << "\e[1m" << name << "\e[0m: " << "; Dmg: " << dmg << "   crit_chance: " << crit
+  cout << "\e[1m" << name << "\e[0m" << "; Dmg: " << dmg << "   crit_chance: " << crit
       << "%    Hp: " << hp << "/" << hpcap << endl;
 }
 

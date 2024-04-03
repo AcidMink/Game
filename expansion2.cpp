@@ -1,6 +1,5 @@
 #include "headings.h"
-
-string<list> shop_items;
+using namespace std;
 
 void shop1(string action) {
   if (action == "health") {
@@ -14,29 +13,27 @@ void shop1(string action) {
     player1_dmg++;
     cout << "=>" << player1_dmg << endl;
   }
-  else if (action == "crit) {
+  else if (action == "crit") {
     cout << player1_crit_chance;
     player1_crit_chance += 2;
-    cout << "=>" << 
+    cout << "=>" << player1_crit_chance << endl;
   }
   else if (action == "defence") {
+    cout << player1_def;
     player1_def++;
-  }
-  else {
-    player1_def--;
+    cout << "=>" << player1_def << endl;
   }
 }
 
 void upgrade_phase() {
-  shop();
   cout << player1_name << endl;    
   cout << "\n\e[1mSHOP\e[0m↓↓↓↓" << endl;
   cout << "\e[1m Health+, Dmg+, Crit+, Defence+ \e[0m" << endl;
   cout << " +5 Hp, +1 Dmg, +2% Crit, +1 Def" << endl;
-  getline(cin, player1_action);
+  cout << player1_name << ": ", getline(cin, player1_action);
   player1_action = to_lower(player1_action);
   shop1(player1_action);
-  getline(cin, player2_action);
-  player2_action = to_lower(player2_action)
-  shop(player2_action);
+  cout << player2_name << ": ", getline(cin, player2_action);
+  player2_action = to_lower(player2_action);
+  shop1(player2_action);
 }
