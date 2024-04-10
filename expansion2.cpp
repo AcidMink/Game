@@ -1,8 +1,6 @@
 #include "headings.h"
 using namespace std;
 
-
-
 void shop1(string action) {
   if (action == "hp") {
     cout << player1_hp;
@@ -62,6 +60,7 @@ void upgrade_phase() {
 }
 //Test run
 int main() {
+  upgrade_phase();
   shop1();
   shop2();
 }
