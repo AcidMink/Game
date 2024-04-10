@@ -19,27 +19,27 @@ string player2_name;
 
 int assassin_hp = 30;
 int assassin_dmg = 8;
-float assassin_crit_chance = 0.05;
+float assassin_crit_chance = 5;
 int draw_init_assassin = 4;
 
 int knight_hp = 40;
 int knight_dmg = 6;
-float knight_crit_chance = 0.10;
+float knight_crit_chance = 10;
 int draw_init_knight = 3;
 
 int demon_hp = 35;
 int demon_dmg = 7;
-float demon_crit_chance = 0.5;
+float demon_crit_chance = 25;
 int draw_init_demon = 2;
 
 int goblin_hp = 15;
 int goblin_dmg = 10;
-float goblin_crit_chance = 0.01;
+float goblin_crit_chance = 5;
 int draw_init_goblin = 6;
 
 int tank_hp = 50;
 int tank_dmg = 5;
-float tank_crit_chance = 0.5;
+float tank_crit_chance = 5;
 int draw_init_tank = 1;
 
 string player1_character;   //Player 1 character
