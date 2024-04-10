@@ -60,9 +60,3 @@ void upgrade_phase() {
   player2_action = to_lower(player2_action);
   shop2(player2_action);
 }
-//Test run
-int main() {
-  upgrade_phase();
-  shop1();
-  shop2();
-}
