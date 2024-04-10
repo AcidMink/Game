@@ -14,7 +14,7 @@ void shop1(string action) {
   }
   else if (action == "crit") {
     cout << player1_crit_chance;
-    player1_crit_chance += 2;
+    player1_crit_chance += 0.02;
     cout << "=>" << player1_crit_chance << endl;
   }
   else if (action == "defence") {
@@ -36,7 +36,7 @@ void shop2(string action) {
   }
   else if (action == "crit") {
     cout << player2_crit_chance;
-    player2_crit_chance += 2;
+    player2_crit_chance += 0.02;
     cout << "=>" << player2_crit_chance << endl;
   }
   else if (action == "defence") {
