@@ -1,6 +1,8 @@
 #include "headings.h"
 using namespace std;
 
+
+
 void shop1(string action) {
   if (action == "hp") {
     cout << player1_hp;
@@ -57,4 +59,9 @@ void upgrade_phase() {
   cout << player2_name << ": ", getline(cin, player2_action);
   player2_action = to_lower(player2_action);
   shop2(player2_action);
+}
+//Test run
+int main() {
+  shop1();
+  shop2();
 }
