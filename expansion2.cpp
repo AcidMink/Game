@@ -51,12 +51,12 @@ void upgrade_phase() {
   cout << "\n\e[1mSHOP\e[0m↓↓↓↓" << endl;
   cout << "\e[1m Health+, Dmg+, Crit+, Defence+ \e[0m" << endl;
   cout << " +5 Hp, +1 Dmg, +2% Crit, +1 Def" << endl;
-  cout << player1_name << ": ", getline(cin, player1_action);
-  cout << endl;
+  cout << player1_name << ": ";
+  cin >> player1_action;
   player1_action = to_lower(player1_action);
   shop1(player1_action);
-  cout << player2_name << ": ", getline(cin, player2_action);
-  cout << endl;
+  cout << player2_name << ": ";
+  cin >>  player2_action;
   player2_action = to_lower(player2_action);
   shop2(player2_action);
 }
