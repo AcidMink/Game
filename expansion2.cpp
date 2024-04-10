@@ -3,10 +3,9 @@ using namespace std;
 
 void shop1(string action) {
   if (action == "hp") {
-    cout << player1_hp;
-    player1_hp += 5;
-    cout << "=>" << player1_hp << endl;
+    cout << player1_hpcap;    
     player1_hpcap += 5;
+    cout << "=>" << player1_hpcap << endl;
   }
   else if (action == "dmg") {
     cout << player1_dmg;
