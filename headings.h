@@ -46,3 +46,8 @@ extern int goblin_hp;
 extern int goblin_dmg;
 extern float goblin_crit_chance;
 extern int draw_init_goblin;
+
+extern int tomann_hp;
+extern int tomann_dmg;
+extern float tomann_crit_chance;
+extern int draw_init_tomann;
