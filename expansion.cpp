@@ -9,6 +9,21 @@ string to_lower(string unfinished) {
 }
 
 
+int player1_start_combat() {
+  cout player1_name << " action: ", cin player1_action;
+  player1_action = to_lower(player1_action);
+  if (player1_action = "attack") {
+    random3 = rand() % 100 + 1;
+    if (player1_def >= random3) {
+      cout << "Player 1 Blockes Attack!" << endl;
+    }
+    else if (player1_def < random3) {
+      cout << Player 1 takes << player2_dmg << endl;
+      player1_hp = player1_hp - player2_dmg;
+    }
+  }
+}
+
 
 int player1_start_combat(int random3, int random4) {
   cout << player1_name << " action: ", cin >> player1_action;
