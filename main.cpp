@@ -86,33 +86,25 @@ void combat_phase() {
   while ((player1_hp > 0)&&(player2_hp > 0)) {
     cout << "\n" << player1_name << " roll for initiative! ", getline(cin,player1_action);
     srand (time(NULL));
-    random1 = rand() % 5 + 1;
+    random1 = rand() % 10 + 1;
     cout << random1 << endl;
     cout << player2_name << " roll for initiative! ", getline(cin,player2_action);
     srand (time(NULL));
-    random2 = rand() % 5 + 1;
+    random2 = rand() % 10 + 1;
     cout << random2 << endl;
     cout << "\e[1m" << random1 << "\e[0m vs \e[1m" << random2 << "\e[0m" << endl;
     if (random1 > random2) {
-      random3 = rand() % 100 + 1;   //Player1 def chance random
-      random4 = rand() % 100 + 1;   //Player2 def chance random
-      player1_start_combat(random3, random4);
+      player1_start_combat();
     }
     else if (random1 < random2) {
-      random3 = rand() % 100 + 1;   //Player1 def chance random
-      random4 = rand() % 100 + 1;   //Player2 def chance random
-      player2_start_combat(random3, random4);
+      player2_start_combat();
     }
     else {
       if (player1_character != player2_character) {
         if (player1_initiative > player2_initiative) {
-          random3 = rand() % 100 + 1;   //Player1 def chance random
-          random4 = rand() % 100 + 1;   //Player2 def chance random
           player1_start_combat(random3, random4);
         }
         else if (player1_initiative	< player2_initiative) {
-          random3 = rand() % 100 + 1;   //Player1 def chance random
-          random4 = rand() % 100 + 1;   //Player2 def chance random
           player2_start_combat(random3, random4);
         }
       }
