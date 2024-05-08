@@ -102,10 +102,10 @@ void combat_phase() {
     else {
       if (player1_character != player2_character) {
         if (player1_initiative > player2_initiative) {
-          player1_start_combat(random3, random4);
+          player1_start_combat();
         }
         else if (player1_initiative	< player2_initiative) {
-          player2_start_combat(random3, random4);
+          player2_start_combat();
         }
       }
       else {
